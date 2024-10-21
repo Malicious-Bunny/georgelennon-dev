@@ -74,7 +74,8 @@ export const Contact = () => {
         }
       />
       <form
-        onSubmit={handleSubmit(onSubmit)}
+        action={'https://formspree.io/f/mjkvvvwb'}
+       method={'POST'}
         className="flex flex-col items-center gap-5"
       >
         <div className="w-full max-w-xl">
@@ -90,6 +91,7 @@ export const Contact = () => {
           <input
             type="email"
             id="email"
+            required
             placeholder="hello@gmail.com"
             {...register('email')}
             className={cn(
@@ -114,6 +116,7 @@ export const Contact = () => {
             Message
           </label>
           <textarea
+          required
             id="message"
             placeholder="Hello! What's up?"
             {...register('message')}
