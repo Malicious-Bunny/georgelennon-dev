@@ -13,6 +13,7 @@ import { useSectionInView } from '@/hooks/use-section-in-view';
 import { formSchema, TFormSchema } from '@/lib/form-schema';
 import { cn } from '@/lib/utils';
 
+
 export const Contact = () => {
   const { ref } = useSectionInView('Contact');
   const {
@@ -63,9 +64,9 @@ export const Contact = () => {
             >
               <a
                 className="underline-offset-4 hover:underline"
-                href="mailto:skolakmichal1@gmail.com"
+                href="mailto:gw50037@gmail.com"
               >
-                skolakmichal1@gmail.com
+                gw50037@gmail.com
               </a>
             </Button>{' '}
             or through this form.

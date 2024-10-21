@@ -16,7 +16,7 @@ export const Intro = () => {
       id="home"
       className="my-10 flex scroll-mt-96 flex-col items-center gap-4 text-center sm:mt-20"
     >
-      <motion.a
+     { /*<motion.a
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{
@@ -28,7 +28,7 @@ export const Intro = () => {
       >
         🎉
         <span className="ml-3">click here to checkout my new blog!</span>
-      </motion.a>
+      </motion.a> */}
       <motion.h1
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -45,8 +45,10 @@ export const Intro = () => {
         }}
         className="text-muted-foreground max-w-lg"
       >
-       Hi, I&apos;m George Lennon, aka malicious-bunny. I&apos;m a full-stack developer specializing in backend ASP.NET and occasional mobile development, passionate about building robust systems and solving complex problems.
-
+        Hi, I&apos;m George Lennon, aka malicious-bunny. I&apos;m a full-stack
+        developer specializing in backend ASP.NET and occasional mobile
+        development, passionate about building robust systems and solving
+        complex problems.
       </motion.p>
       <motion.div
         initial={{ opacity: 0, y: 100 }}

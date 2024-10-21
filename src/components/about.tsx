@@ -20,18 +20,11 @@ export const About = () => {
     >
       <SectionHeading heading="About Me" />
       <div className="-mt-5 max-w-2xl text-center leading-7">
-        <p className="mb-4">
-          I&apos;m Michał Skolak, I&apos;m a front-end developer from Poland.
-          I&apos;ve been learning programming for over 3 years. After I started
-          high school, I decided to pursue my passion for programming. My
-          favorite part of programming is the problem-solving aspect. I love the
-          feeling of finally figuring out a solution to a problem. I&apos;ve had
-          the opportunity to work on several exciting projects during my
-          learning journey, ranging from personal projects to collaborative
-          ventures. My core stack is React, Next.js, TypeScript, and Tailwind
-          CSS. I am also familiar with Nest.js and Prisma. I am always looking
-          to learn new technologies.
-        </p>
+      <p className="mb-4">
+  I’m George Lennon, also known as malicious-bunny. I’m a full-stack developer with 4 years of programming experience, currently navigating the challenges of college life. My journey into programming ignited a passion for building robust systems and solving complex problems. I enjoy working with ASP.NET, Expo-React Native, Next.js, and I have a keen interest in QA and DevOps, along with a foundation in C++. Throughout my journey, I’ve tackled various projects, from personal endeavors to collaborative efforts. I'm always eager to learn new technologies and expand my skill set.
+</p>
+
+
         <p>
           I&apos;m open to Job opportunities where I can contribute, learn and
           grow. If you have a good opportunity that matches my skills and

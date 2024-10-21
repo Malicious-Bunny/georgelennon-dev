@@ -32,14 +32,14 @@ export const projectsData = [
     technologies: ['Next.js', 'TypeScript', ' Nest.js', 'Tailwind', 'Prisma'],
     links: {
       preview: 'https://socialhub-ms.vercel.app/',
-      github: 'https://github.com/Skolaczk/SocialHub',
+      github: 'https://github.com/Malicious-Bunny/SocialHub',
       githubApi: 'https://api.github.com/repos/Skolaczk/SocialHub',
     },
   },
   {
     image: '/projects/nextstarter.svg',
-    title: 'Next-starter',
-    description: 'Next.js starter template, packed with useful features.',
+    title: 'Oasis',
+    description: 'Modelling agency website with CMS.',
     technologies: [
       'Next.js',
       'TypeScript',
@@ -47,11 +47,12 @@ export const projectsData = [
       'Shadcn/ui',
       'Next-auth',
       'Prisma',
+      'asp.net',
     ],
     links: {
-      preview: 'https://next-starter-skolaczk.vercel.app',
-      github: 'https://github.com/Skolaczk/next-starter',
-      githubApi: 'https://api.github.com/repos/Skolaczk/next-starter',
+      preview: 'https://oasisofobsession.com',
+      github: 'https://github.com/Malicious-Bunny/Oasis',
+      githubApi:'https://api.github.com/repos/Skolaczk/Audiophile',
     },
   },
   {
@@ -67,7 +68,7 @@ export const projectsData = [
     ],
     links: {
       preview: 'https://audiophile-ms.netlify.app/',
-      github: 'https://github.com/Skolaczk/Audiophile',
+      github: 'https://github.com/Malicious-Bunny/Audiophile',
       githubApi: 'https://api.github.com/repos/Skolaczk/Audiophile',
     },
   },
@@ -75,25 +76,32 @@ export const projectsData = [
 
 export const experiencesData = [
   {
-    title: 'Internship at WEB-BOX',
-    location: 'Tarnobrzeg, PL',
+    title: 'Internship at glothelo',
+    location: 'Bastos, Yaounde-Cameroon',
     description:
       'During this internship, I focused on two key areas: creating Wordpress plugins and managing website content, plugins, and settings.',
-    date: '2023',
+    date: 'March-2023',
   },
   {
-    title: 'Internship at Chop-Chop',
-    location: 'Remote',
+    title: 'Internship at Camtel',
+    location: 'Yaounde-Cameroon',
     description:
-      'During my internship at Chop-Chop, I collaborated with an experienced IT team, focusing on tasks in Next.js. This experience provided valuable insights into teamwork and advanced my proficiency in Next.js.',
-    date: '2024',
+     'Focused on building the website views for the company\'s rebranding to blue',
+    date: 'August-2023',
   },
   {
     title: 'Freelancing',
     location: 'Remote',
     description:
       'As a freelancer, I specialized in graphic design using Figma and website development using Next.js with Sanity CMS. I undertook projects independently, from design conceptualization to final implementation, ensuring client satisfaction.',
-    date: '2023 - present',
+    date: 'March - June 2024',
+  },
+  {
+    title: 'Freelancing',
+    location: 'Brandenburg, Germany',
+    description:
+    'Being the main developer for the modeling agency Oasis, I was responsible for the website\'s design and implementation. I also managed the website\'s content and settings.',
+    date: 'October 2024 - Present',
   },
 ] as const;
 
