@@ -14,6 +14,7 @@ import { formSchema, TFormSchema } from '@/lib/form-schema';
 import { cn } from '@/lib/utils';
 
 
+
 export const Contact = () => {
   const { ref } = useSectionInView('Contact');
   const {
@@ -23,17 +24,7 @@ export const Contact = () => {
     formState: { errors },
   } = useForm<TFormSchema>({ resolver: zodResolver(formSchema) });
 
-  const onSubmit = async (values: TFormSchema) => {
-    const { data, error } = await sendEmail(values);
 
-    if (error) {
-      toast.error(error);
-      return;
-    }
-
-    toast.success(data);
-    reset();
-  };
 
   return (
     <motion.section
@@ -82,54 +73,41 @@ export const Contact = () => {
           <label
             htmlFor="email"
             className={cn(
-              'text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70',
-              errors.email?.message && 'text-destructive'
+              'text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70'
             )}
           >
             Email
           </label>
           <input
             type="email"
+            name="email"
             id="email"
             required
             placeholder="hello@gmail.com"
-            {...register('email')}
             className={cn(
-              'border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring mt-2 flex h-10 w-full rounded-md border px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
-              errors.email?.message && 'border-destructive'
+              'border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring mt-2 flex h-10 w-full rounded-md border px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50'
             )}
           />
-          {errors.email?.message && (
-            <p className="text-destructive mt-1 text-sm">
-              {errors.email?.message}
-            </p>
-          )}
         </div>
         <div className="w-full max-w-xl">
           <label
             htmlFor="message"
             className={cn(
-              'text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70',
-              errors.message?.message && 'text-destructive'
+              'text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70'
             )}
           >
             Message
           </label>
           <textarea
+          name="message"
           required
             id="message"
             placeholder="Hello! What's up?"
-            {...register('message')}
             className={cn(
               'border-input bg-background ring-offset-background placeholder:text-muted-foreground focus-visible:ring-ring mt-2 flex h-60 w-full resize-none rounded-md border px-3 py-2 text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50',
-              errors.message?.message && 'border-destructive'
+             
             )}
           ></textarea>
-          {errors.message?.message && (
-            <p className="text-destructive mt-1 text-sm">
-              {errors.message?.message}
-            </p>
-          )}
         </div>
         <Button size="lg">
           Submit <Icons.arrowRight className="ml-2 size-4" />
