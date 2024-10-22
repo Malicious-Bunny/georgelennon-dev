@@ -69,7 +69,7 @@ export const Intro = () => {
           className="hidden sm:flex"
           asChild
         >
-          <a href="/michalskolak.pdf" download>
+          <a href="/georgelennon.pdf" download>
             Download CV <Icons.download className="ml-2 size-4" />
           </a>
         </Button>
