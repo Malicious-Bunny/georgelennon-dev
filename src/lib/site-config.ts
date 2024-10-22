@@ -1,7 +1,7 @@
 import { env } from '@/env.mjs';
 
 export const siteConfig = {
-  title: 'George | Software developer',
+  title: 'George Lennon | Software developer',
   description:
     "Hello, I'm George Lennon, also known as malicious-bunny. I'm a fullstack developer with a focus on JavaScript (React), ASP.NET, and React Native. I enjoy building scalable systems and leading projects to success.",
     keywords: [
