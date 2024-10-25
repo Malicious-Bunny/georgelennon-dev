@@ -37,25 +37,6 @@ export const projectsData = [
     },
   },
   {
-    image: '/projects/nextstarter.svg',
-    title: 'Oasis',
-    description: 'Modelling agency website with CMS.',
-    technologies: [
-      'Next.js',
-      'TypeScript',
-      'Tailwind',
-      'Shadcn/ui',
-      'Next-auth',
-      'Prisma',
-      'asp.net',
-    ],
-    links: {
-      preview: 'https://oasisofobsession.com',
-      github: 'https://github.com/Malicious-Bunny/Oasis',
-      githubApi:'https://api.github.com/repos/Skolaczk/Audiophile',
-    },
-  },
-  {
     image: '/projects/audiophile.svg',
     title: 'Audiophile',
     description: 'Online store specializing in headphones and speakers.',
